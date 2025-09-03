@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Roblox Game</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="#home">
+      <img src="images/logo.jpg" alt="Game logo" class="brand__logo" />
+      <span class="brand__name">Steal Humanity!</span>
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" id="navToggle">☰</button>
+      <ul class="nav__list" id="nav-list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#updates">Updates</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      <a class="btn btn--primary play-btn" href="https://www.roblox.com/games/113091156807039" target="_blank">Play Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero__copy">
+        <h1>Step Into <span class="txt-gradient">Your World</span></h1>
+        <p class="lead">Smooth, stylish, and endlessly fun. Built with premium gameplay in mind.</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="https://www.roblox.com/games/113091156807039" target="_blank">Play on Roblox</a>
+          <a class="btn btn--secondary" href="#gallery">See Screenshots</a>
+        </div>
+      </div>
+      <!-- <div class="hero__media">
+        <img src="images/hero.jpg" alt="Hero screenshot" />
+      </div> -->
+    </section>
+
+    <!-- Features -->
+    <section class="section container" id="features">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card"><h3>Polished Controls</h3><p>Responsive movement that feels premium.</p></div>
+        <div class="card"><h3>Fair Progression</h3><p>Earn rewards through play, no shortcuts.</p></div>
+        <div class="card"><h3>Events & Seasons</h3><p>Exclusive drops & stylish content updates.</p></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section container" id="gallery">
+      <h2>Gallery</h2>
+      <div class="carousel" data-role="carousel">
+        <button class="carousel__btn prev" data-dir="-1">‹</button>
+        <div class="carousel__track">
+          <img src="images/shot1.jpg" class="carousel__item is-active" />
+          <img src="images/shot2.jpg" class="carousel__item" />
+          <img src="images/shot3.jpg" class="carousel__item" />
+        </div>
+        <button class="carousel__btn next" data-dir="1">›</button>
+      </div>
+    </section>
+
+    <!-- Updates -->
+    <section class="section container" id="updates">
+      <h2>Updates</h2>
+      <ul class="timeline">
+        <li><time>Jun 28, 2025</time> <strong>Update #1</strong> — Stylish new map & new characters & fixes.</li>
+        <li><time>Jun 21, 2025</time> <strong>Launch</strong> — Public release 🎉</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section container" id="faq">
+      <h2>FAQ</h2>
+      <details><summary>Supported devices?</summary><p>PC, Mac, mobile, Xbox.</p></details>
+      <details><summary>In-game purchases?</summary><p>Not pay-to-win at all. Will add gamepasses, but it will be only cosmetics. Stay tuned!</p></details>
+      <details><summary>Update frequency?</summary><p>Seasonal drops & patches every 2 weeks/a month.</p></details>
+    </section>
+
+    <!-- Community -->
+    <section class="section container" id="community">
+      <h2>Community</h2>
+      <div class="grid">
+        <a class="card link" href="https://discord.gg/yXzm4xeA27">Discord</a>
+        <a class="card link" href="https://twitter.com/test">Twitter/X(will create soon)</a>
+        <a class="card link" href="https://www.youtube.com/@test">YouTube(will create soon)</a>
+        <a class="card link" href="https://www.roblox.com/groups/53984741">Roblox Group</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Your Studio. Styled with care. Not affiliated with Roblox.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
